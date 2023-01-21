@@ -8,10 +8,12 @@ namespace QualityLab.StepDefinitions
     public class LoginStepDefinitions
     {
         private HomePage _homePage;
+        private InboxPage _inboxPage;
 
         public LoginStepDefinitions()
         {
             _homePage = new HomePage();
+            _inboxPage = new InboxPage();
         }
 
         [Given(@"registered user")]
@@ -30,24 +32,30 @@ namespace QualityLab.StepDefinitions
         public void WhenEnterEmail(string email)
         {
             _homePage.EnterEmail(email);
+            _homePage.ClickOnButtonNextEnterPassword();
         }
 
         [When(@"enter password ""([^""]*)""")]
         public void WhenEnterPassword(string password)
         {
-            throw new PendingStepException();
+            _homePage.EnterPassword(password);
+            _homePage.ClickOnButtonSubmit();
         }
 
-        [Then(@"inbox page should opened")]
-        public void ThenInboxPageShouldOpened()
+        [Then(@"can open inbox page")]
+        public void ThenCanOpenInboxPage()
         {
-            throw new PendingStepException();
+            _inboxPage.OpenThisPage();
+            string expectedUrl = $"{Urls.Inbox}";
+            string actualUrl = SingleWebDriver.GetInstance().Url;
+            Assert.Contains(expectedUrl, actualUrl);
         }
 
-        [Then(@"user name must be ""([^""]*)""")]
-        public void ThenUserNameMustBe(string p0)
+        [Then(@"label account name must be ""([^""]*)""")]
+        public void ThenLabelAccountNameMustBe(string expectedName)
         {
-            throw new PendingStepException();
+            string actualName = _inboxPage.GetAccountName();
+            Assert.Equal(expectedName, actualName);
         }
     }
 }

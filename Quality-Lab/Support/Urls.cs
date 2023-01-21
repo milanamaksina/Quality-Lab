@@ -9,5 +9,6 @@ namespace QualityLab.Support
     public class Urls
     {
         public const string Host = $"https://mail.ru/";
+        public const string Inbox = $"https://e.mail.ru/messages/";
     }
 }
