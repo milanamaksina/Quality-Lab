@@ -5,17 +5,17 @@ using System.CodeDom.Compiler;
 using global::System.Runtime.CompilerServices;
 
 [assembly: global::Xunit.TestFramework("TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XunitTestFrameworkWithAssemblyFixture", "TechTalk.SpecFlow.xUnit.SpecFlowPlugin")]
-[assembly: global::TechTalk.SpecFlow.xUnit.SpecFlowPlugin.AssemblyFixture(typeof(global::Quality-Lab_XUnitAssemblyFixture))]
+[assembly: global::TechTalk.SpecFlow.xUnit.SpecFlowPlugin.AssemblyFixture(typeof(global::QualityLab_XUnitAssemblyFixture))]
 
 [GeneratedCode("SpecFlow", "3.9.40")]
-public class Quality-Lab_XUnitAssemblyFixture : global::System.IDisposable
+public class QualityLab_XUnitAssemblyFixture : global::System.IDisposable
 {
     private readonly global::System.Reflection.Assembly _currentAssembly;
 
     [MethodImpl(MethodImplOptions.NoInlining)]
-    public Quality-Lab_XUnitAssemblyFixture()
+    public QualityLab_XUnitAssemblyFixture()
     {
-        _currentAssembly = typeof(Quality-Lab_XUnitAssemblyFixture).Assembly;
+        _currentAssembly = typeof(QualityLab_XUnitAssemblyFixture).Assembly;
         global::TechTalk.SpecFlow.TestRunnerManager.OnTestRunStart(_currentAssembly);
     }
 
@@ -27,7 +27,7 @@ public class Quality-Lab_XUnitAssemblyFixture : global::System.IDisposable
 }
 
 [global::Xunit.CollectionDefinition("SpecFlowNonParallelizableFeatures", DisableParallelization = true)]
-public class Quality-Lab_SpecFlowNonParallelizableFeaturesCollectionDefinition
+public class QualityLab_SpecFlowNonParallelizableFeaturesCollectionDefinition
 {
 }
 #pragma warning restore

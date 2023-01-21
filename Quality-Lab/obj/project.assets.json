@@ -6837,9 +6837,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\L\\source\\repos\\Quality-Lab\\Quality-Lab\\Quality-Lab.csproj",
-      "projectName": "Quality-Lab",
-      "projectPath": "C:\\Users\\L\\source\\repos\\Quality-Lab\\Quality-Lab\\Quality-Lab.csproj",
+      "projectUniqueName": "C:\\Users\\L\\source\\repos\\Quality-Lab\\Quality-Lab\\QualityLab.csproj",
+      "projectName": "QualityLab",
+      "projectPath": "C:\\Users\\L\\source\\repos\\Quality-Lab\\Quality-Lab\\QualityLab.csproj",
       "packagesPath": "C:\\Users\\L\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\L\\source\\repos\\Quality-Lab\\Quality-Lab\\obj\\",
       "projectStyle": "PackageReference",

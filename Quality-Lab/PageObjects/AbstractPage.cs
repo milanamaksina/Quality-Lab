@@ -2,7 +2,7 @@
 
 namespace QualityLab.PageObjects
 {
-    public class AbstractPage
+    public abstract class AbstractPage
     {
         protected IWebDriver _driver;
 
@@ -11,5 +11,7 @@ namespace QualityLab.PageObjects
             _driver = SingleWebDriver.GetInstance();
             _driver.Manage().Window.Maximize();
         }
+
+        public abstract void OpenThisPage();
     }
 }

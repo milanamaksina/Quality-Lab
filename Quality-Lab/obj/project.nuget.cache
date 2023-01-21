@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MUzqBv//+3fZyePTMzTpj5yCxfNWoAMhqG/2bKSmIcSmW9Qu/OAzaIE3rzhdZtdSJx0cE77KOwgppm15UrK9wA==",
+  "dgSpecHash": "JyUldOqIDG6GkCYWWh0CZ+eRa2Eo5y+V3CeBZTJNHPCMQ9+q4w11NauMAhStUqdKH6iw3frfPKjAHuHqOXDveA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\L\\source\\repos\\Quality-Lab\\Quality-Lab\\Quality-Lab.csproj",
+  "projectFilePath": "C:\\Users\\L\\source\\repos\\Quality-Lab\\Quality-Lab\\QualityLab.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\L\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\L\\.nuget\\packages\\fluentassertions\\6.2.0\\fluentassertions.6.2.0.nupkg.sha512",
