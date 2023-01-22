@@ -1,4 +1,3 @@
-using OpenQA.Selenium.Support.UI;
 using QualityLab.PageObjects;
 using QualityLab.Support;
 
@@ -16,13 +15,15 @@ namespace QualityLab.StepDefinitions
             _inboxPage = new InboxPage();
         }
 
-        [Given(@"registered user")]
-        public void GivenRegisteredUser()
+        [Given(@"I open mail\.ru home page")]
+        public void WhenOpenMail_RuHomePage()
         {
-           //Preconditions registration
+            var driver = SingleWebDriver.GetInstance();
+            driver.Manage().Window.Maximize();
+            driver.Navigate().GoToUrl(Urls.Host);
         }
 
-        [When(@"click on enter button")]
+        [Given(@"click on enter button")]
         public void WhenClickOnEnterButton()
         {
             _homePage.ClickOnButtonEnter();
@@ -42,6 +43,12 @@ namespace QualityLab.StepDefinitions
             _homePage.ClickOnButtonSubmit();
         }
 
+        [When(@"click on submit button")]
+        public void WhenClickOnSubmitButton()
+        {
+            _homePage.ClickOnButtonSubmit();
+        }
+
         [Then(@"can open inbox page")]
         public void ThenCanOpenInboxPage()
         {
@@ -51,7 +58,7 @@ namespace QualityLab.StepDefinitions
             Assert.Contains(expectedUrl, actualUrl);
         }
 
-        [Then(@"label account name must be ""([^""]*)""")]
+        [Then(@"label account name is ""([^""]*)""")]
         public void ThenLabelAccountNameMustBe(string expectedName)
         {
             string actualName = _inboxPage.GetAccountName();
